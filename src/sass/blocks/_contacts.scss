@@ -1,0 +1,47 @@
+.contacts {
+  padding: 45px 0 45px;
+  &__wrapper {
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 400px 585px;
+    column-gap: 80px;
+  }
+  iframe {
+    width: 400px;
+    height: 600px;
+    border: 0;
+  }
+  &__descr {
+    padding-top: 6px;
+    .divider {
+      margin: 0;
+    }
+  }
+  &__title {
+    display: flex;
+    justify-self: center;
+    position: relative;
+    padding: 1px 0 0 12px;
+    @include before_circle
+  }
+  &__text,
+  &__social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    margin-right: 12px;
+    transition: opacity 0.2s ease;
+    img {
+      width: 30px;
+      height: 30px;
+      filter: $brightness;
+    }
+    &:hover {
+      text-decoration: none;
+      opacity: 0.9;
+    }
+  }
+}

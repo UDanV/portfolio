@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/animate';
+
+@import 'base/animations';
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $main-subcolor;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: #9963ff;
+  margin: 25px auto 0;
+}
+
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/about';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+@import 'blocks/media';

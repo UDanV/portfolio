@@ -1,0 +1,76 @@
+.skills {
+  padding-top: 120px;
+  &__title {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &:before {
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__nav {
+    display: none;
+    margin: 60px 0 24px;
+    text-align: center;
+    list-style-type: none;
+  }
+  &__elem {
+    display: inline;
+    margin: 0 16px;
+    font-size: 16px;
+    cursor: pointer;
+    &_active {
+      font-weight: bold;
+    }
+  }
+  &__items {
+    margin-top: 60px;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 80px;
+  }
+  &__item {
+    &-head {
+      display: flex;
+      margin-bottom: 12px;
+      align-items: center;
+      h4 {
+        margin: 0;
+      }
+    }
+    &-icon {
+      margin-right: 16px;
+    }
+    &-body {
+      display: grid;
+      gap: 24px;
+    }
+    &-descr {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    &-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 0;
+      padding-bottom: 16px;
+      list-style: none;
+      border-bottom: 1px solid $main-subcolor;
+    }
+    &-name {
+      margin: 0;
+      padding: 8px 16px;
+      border-radius: 4px;
+      background-color: #f2f2f2;
+      font-size: 14px;
+    }
+  }
+}
